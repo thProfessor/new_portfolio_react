@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+.footer__content {
+  font-family: "Caveat", cursive;
+}
+.footer {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 540px) {
+  .footer {
+    max-width: 350px;
+  }
+}
