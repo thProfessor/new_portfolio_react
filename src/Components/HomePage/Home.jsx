@@ -2,13 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Code from "../Code/Code";
 import Gdesign from "../Gdesign";
-import PuffLoader from "react-spinners/PuffLoader";
+
+
+import { motion } from "framer-motion"
 
 function Home() {
-  const [loading, setLoading] = useState(false);
+
   let spansSlow = "";
   let spansFast = "";
   let width = window.innerWidth;
+
 
   function handleMouseMove(e) {
     let normalizePosition = e.pageX / (width / 2) - 1;
@@ -26,23 +29,22 @@ function Home() {
     spansSlow = document.querySelectorAll(".spanSlow");
     spansFast = document.querySelectorAll(".spanFast");
   }, []);
+
+
+  const variants = {
+    visible: { opacity: 1, transition:{
+      delay: 3
+    } },
+    hidden: { opacity: 0 },
+  }
+
   return (
-    <>
-      {loading ? (
-        <div
-          style={{
-            height: "100vh",
-            zIndex: 10000,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <PuffLoader loading={loading} size={150} />
-        </div>
-      ) : (
         <>
-          <div className="home__text__container container-fluid">
+          <motion.div className="home__text__container container-fluid" 
+            initial="hidden"
+             animate="visible"
+              variants={variants}
+              >
             <div
               className="wrap container-fluid mx-auto"
               onMouseMove={handleMouseMove}
@@ -96,13 +98,10 @@ function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
           <Code />
           <Gdesign />
         </>
       )}
-    </>
-  );
-}
 
 export default Home;

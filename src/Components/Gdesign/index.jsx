@@ -1,14 +1,25 @@
 import React from "react";
 import { useHistory } from "react-router";
 import "./style.css";
+import { motion } from "framer-motion"
 
 function Gdesign() {
   const history = useHistory();
 
+  const variants = {
+    visible: { opacity: 1, transition:{
+      delay: 5,
+    } },
+    hidden: { opacity: 0 },
+  }
+
   return (
-    <div
+    <motion.div
       className="design__section m-0 mt-5 row pt-3 container-fluid"
       style={{ overflow: "hidden" }}
+      initial="hidden"
+      animate="visible"
+       variants={variants}
     >
       <div class="center col-md-6">
         <div class="group1">
@@ -52,7 +63,7 @@ function Gdesign() {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
