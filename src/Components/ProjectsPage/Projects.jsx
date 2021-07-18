@@ -48,10 +48,10 @@ function Projects() {
         <>
           <div className="projects container mx-auto mt-5 pt-5" style={{    justifyContent: "center",rowGap:'60px',columnGap:'100px',display:'flex',flexWrap:'wrap',overflow:'hidden'}}>
           <h3 style={{position:'absolute',zIndex:'-1',display:'flex',justifyContent:'center',alignItems:'center'}}>DESTROYED</h3>
-              <div><NikeCard /></div>
-              <div><NikeCard2 /></div>
-              <div><NikeCard3 /></div>
-              <div><NikeCard4 /></div>
+              <div ><NikeCard /></div>
+              <div  ><NikeCard2 /></div>
+              <div ><NikeCard3 /></div>
+              <div ><NikeCard4 /></div>
 
           </div>
 

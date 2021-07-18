@@ -62,7 +62,7 @@ export function ShoesDetails(props) {
       <MediumText>Devcom</MediumText>
       <SpacedHorizontalContainer>
         <SmallText>MERN stack project for developers to connect JWT auth and bycrpyt implemented.</SmallText>
-        <MediumText>Grab & Move</MediumText>
+        
       </SpacedHorizontalContainer>
      
       <SpacedHorizontalContainer>

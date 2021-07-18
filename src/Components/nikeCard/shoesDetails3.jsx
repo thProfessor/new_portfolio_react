@@ -65,7 +65,7 @@ export function ShoesDetails(props) {
       <MediumText>cold brew</MediumText>
       <SpacedHorizontalContainer>
         <SmallText>Redisgned Coffee selling company website using React hooks and hosted on Firebase. </SmallText>
-        <MediumText>Grab & Move</MediumText>
+        
       </SpacedHorizontalContainer>
      
       <SpacedHorizontalContainer>

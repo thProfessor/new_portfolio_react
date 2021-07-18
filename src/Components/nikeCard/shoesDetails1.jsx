@@ -64,7 +64,7 @@ export function ShoesDetails(props) {
       <MediumText>Netflix Redesign</MediumText>
       <SpacedHorizontalContainer>
         <SmallText>Redisgned Netflix using React hooks and Redux and hosted on Firebase. </SmallText>
-        <MediumText>Grab & Move</MediumText>
+
       </SpacedHorizontalContainer>
      
       <SpacedHorizontalContainer>

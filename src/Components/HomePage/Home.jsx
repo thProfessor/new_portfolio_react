@@ -33,7 +33,7 @@ function Home() {
 
   const variants = {
     visible: { opacity: 1, transition:{
-      delay: 3
+      delay: 1,
     } },
     hidden: { opacity: 0 },
   }

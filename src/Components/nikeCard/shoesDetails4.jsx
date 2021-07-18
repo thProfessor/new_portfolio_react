@@ -65,7 +65,7 @@ export function ShoesDetails(props) {
       <MediumText>pixelator</MediumText>
       <SpacedHorizontalContainer>
         <SmallText>Now design your 2d pixel game assets on the go!</SmallText>
-        <MediumText>Grab & Move</MediumText>
+      
       </SpacedHorizontalContainer>
      
       <SpacedHorizontalContainer>

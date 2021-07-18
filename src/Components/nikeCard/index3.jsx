@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
@@ -43,7 +43,7 @@ const Circle = styled.div`
   top: -4.2em;
   right: -10em;
   z-index: 5;
-  background-color: #502E2D;
+  background-color: #502e2d;
   border-radius: 50%;
 `;
 
@@ -98,31 +98,15 @@ const Shoes = styled(motion.div)`
 `;
 
 export function NikeCard3(props) {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const rotateX = useTransform(y, [-100, 100], [30, -30]);
-  const rotateY = useTransform(x, [-100, 100], [-30, 30]);
-
   return (
     <CardWrapper>
-      <CardContainer
-        style={{ x, y, rotateX, rotateY, z: 100 }}
-        drag
-        dragElastic={0.16}
-        dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
-        whileTap={{ cursor: "grabbing" }}
-      >
+      <CardContainer>
         <TopContainer>
           <CircleWrapper>
             <Circle />
           </CircleWrapper>
           <ShoesWrapper>
-            <Shoes
-              style={{ x, y, rotateX, rotateY, z: 100000 }}
-              drag
-              dragElastic={0.12}
-              whileTap={{ cursor: "grabbing" }}
-            >
+            <Shoes>
               <img src={AirJordanImg} />
             </Shoes>
           </ShoesWrapper>
